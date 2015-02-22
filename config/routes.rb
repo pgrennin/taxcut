@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'tax_returns/sample/camera' => 'tax_returns#render_camera'
 
+  get 'how-it-works' => 'welcome#how_works'
+
   # get 'tax_returns/sample/page_2' => 'tax_returns#sample'
 
   # Example of regular route:
