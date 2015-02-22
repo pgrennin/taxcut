@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  resources :tax_returns
+
+  get 'tax_returns/sample' => 'tax_returns#sample'
+
+  get 'tax_returns/sample' => 'tax_returns#sample'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

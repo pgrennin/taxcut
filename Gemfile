@@ -39,3 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-sass', '~> 3.3.3'
+
+gem 'rails_12factor'
+
+ruby '2.0.0'

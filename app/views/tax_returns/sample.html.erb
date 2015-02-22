@@ -1,0 +1,44 @@
+
+<!-- <div class="alert alert-success" role="alert">Congratulations! You qualify to receive $437 from the IRS in 1-2 weeks!</div>
+ -->
+<p class="lead">To confirm please review your information below:</p>
+<form action="">
+<input type="checkbox" name="" value="" checked> I'm single<br>
+<input type="checkbox" name="" value="" checked>  Have no Dependents<br>
+<input type="checkbox" name="" value="" checked>  Earned less than $60,000<br>
+<input type="checkbox" name="" value="" checked>  You did not live in one state and work in another<br>
+<input type="checkbox" name="" value="" checked>  You are working on an associates, bachelors or masters degree<br>
+<input type="checkbox" name="" value="" checked>  You were enrolled at least half time<br>
+<!-- <input type="checkbox" name="" value="" checked><br>
+<input type="checkbox" name="" value="" checked><br>
+ -->
+</form>
+
+  <p class="lead">
+    <%=button_to "Save and continue", tax_returns_path, class: "btn btn-lg btn-primary"%>
+  </p>
+
+<p class="lead">We took the following information from your W-2:</p>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <table class="table" id='review-table'>
+      <tr>
+        <td>Name:</td>
+        <td>Christina Stevens</td>
+      </tr>
+      <tr>
+        <td>Social Security #:</td>
+        <td>400-06-7835</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td>14A Loafers Lane</td>
+      </tr>
+
+    </table>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+

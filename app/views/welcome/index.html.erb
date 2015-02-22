@@ -1,57 +1,14 @@
-<div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">TaxCut</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">File your state and federal taxes in 5 minutes or less for only $5</h1>
-            <p class="lead">No hidden fees. No Gimmicks.</p>
-            <p class="lead">
-              <a class="btn btn-lg btn-default" data-toggle="collapse" href="#learnMoreText" aria-expanded="false" aria-controls="learnMoreText">
-                Upload my W-2
-              </a>
-
-              <form action="w2photo">
-                <input type="file" accept="image/*" capture="camera">
-              </form>
-            </p>
-
-          </div>
 
 
-          <div class="collapse" id="learnMoreText">
-            <div class="">
-              <p>Take a picture of your W-2 using your camera.<p>
-
-              <p>You can use our service if ....</p>
-
-            </div>
-          </div>
+<div class="inner cover" id="landing">
+  <h1 class="cover-heading">File your state and federal taxes in 5 minutes or less for only $5</h1>
+  <p class="lead">No hidden fees. No Gimmicks.</p>
+  <p class="lead">
+    <%=button_to "Upload your W-2", tax_returns_path, class: "btn btn-lg btn-default"%>
+  </p>
+</div><!-- inner cover -->
 
 
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Check us out on <a href="https://twitter.com/taxcutnow">Twitter</a>.</p>
-            </div>
-          </div>
 
-        </div>
 
-      </div>
-
-    </div>
