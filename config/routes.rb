@@ -7,9 +7,17 @@ Rails.application.routes.draw do
 
   resources :tax_returns
 
-  get 'tax_returns/sample' => 'tax_returns#sample'
+  # get 'tax_returns/sample' => 'tax_returns#sample'
 
-  get 'tax_returns/sample' => 'tax_returns#sample'
+  post 'tax_returns/sample/page_2' => 'tax_returns#sample'
+
+  get 'tax_returns/sample/page_1' => 'tax_returns#sample_1'
+
+  get 'tax_returns/sample/page_2' => 'tax_returns#sample_3'
+
+  get 'tax_returns/sample/camera' => 'tax_returns#render_camera'
+
+  # get 'tax_returns/sample/page_2' => 'tax_returns#sample'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
