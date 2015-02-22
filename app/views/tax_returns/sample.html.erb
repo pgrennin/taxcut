@@ -1,7 +1,7 @@
 
 <!-- <div class="alert alert-success" role="alert">Congratulations! You qualify to receive $437 from the IRS in 1-2 weeks!</div>
  -->
-<p class="lead">To confirm please review your information below:</p>
+<p class="lead">Please review your information below:</p>
 <form action="">
 <input type="checkbox" name="" value="" checked> I'm single<br>
 <input type="checkbox" name="" value="" checked>  Have no Dependents<br>
@@ -13,10 +13,7 @@
 <input type="checkbox" name="" value="" checked><br>
  -->
 </form>
-
-  <p class="lead">
-    <%=button_to "Save and continue", tax_returns_path, class: "btn btn-lg btn-primary"%>
-  </p>
+<hr>
 
 <p class="lead">We took the following information from your W-2:</p>
 
@@ -42,3 +39,29 @@
   <div class="col-md-4"></div>
 </div>
 
+<p>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#birthdate-toggle" aria-expanded="false" aria-controls="birthdate-toggle">
+  Please enter your Birthdate
+</button>
+<div class="collapse" id="birthdate-toggle">
+  <div class="well">
+    date form
+  </div>
+</div>
+</p>
+
+<p>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bank-account-toggle" aria-expanded="false" aria-controls="bank-account-toggle">
+  Enter Your bank account to receive your refund
+</button>
+<div class="collapse" id="bank-account-toggle">
+  <div class="well">
+    bank account form
+  </div>
+</div>
+</p>
+
+
+  <p class="lead">
+    <%=button_to "Save and continue", tax_returns_path, class: "btn btn-lg btn-primary"%>
+  </p>
